@@ -1,0 +1,111 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0;
+}
+h1{
+    margin: 15px 0;
+}
+.title{
+    width: 100%;
+    font-size: 28px;
+    -webkit-box-shadow: 0px 4px 6px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 6px -4px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 6px -4px rgba(0,0,0,0.75);
+    padding: 1px 0;
+}
+#board{
+    width: 350px;
+    height: 420px;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.tile{
+    border: 2px solid lightgray;
+    width: 60px;
+    height: 60px;
+    margin: 2.5px;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#answer{
+    font-size: 18px;
+    margin: 35px 0;
+    font-weight: bold;
+}
+.retry{
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    color: #FFFFFF;
+    text-decoration: none;
+    line-height: 1.2;
+    font-weight: normal;
+    font-size: 18px;
+    background-color: #6AAA64;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: 1px solid #4e8062;
+    cursor: pointer;
+    }
+.retry:hover {
+    background-color: #548850;
+    border-color: #42683e;
+}
+.retry > strong {
+    font-size: 24px;
+}
+@keyframes flip-wrong {
+    0% {
+      transform: scaleY(1);
+    }
+  
+    50% {
+      background-color: white;
+      transform: scaleY(0);
+    }
+  
+    100% {
+      transform: scaleY(1);
+      background-color: #787C7E;
+      border-color: white;
+    }
+}
+@keyframes flip-correct {
+    0% {
+      transform: scaleY(1);
+    }
+  
+    50% {
+      background-color: white;
+      transform: scaleY(0);
+    }
+  
+    100% {
+      transform: scaleY(1);
+      background-color: #6AAA64;
+      border-color: white;
+    }
+}
+@keyframes flip-present {
+    0% {
+      transform: scaleY(1);
+    }
+  
+    50% {
+      background-color: white;
+      transform: scaleY(0);
+    }
+  
+    100% {
+      transform: scaleY(1);
+      background-color: #C9B458;
+      border-color: white;
+    }
+}
