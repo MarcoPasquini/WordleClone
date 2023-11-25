@@ -73,7 +73,7 @@ function keyAction(key){
     }else if(key.code == "Enter"){
         if(currentColumn == WORD_LENGTH){
             let currentWord = getWrittenWord();
-            if(words.includes(currentWord)){
+            if(dictionary.includes(currentWord)){
                 update(currentWord.toUpperCase());
                 currentRow++;
                 currentColumn = 0;
@@ -90,7 +90,7 @@ function keyAction(key){
     }
 }
 function newWord(){
-    word = words[Math.floor(Math.random()*words.length)].toUpperCase();
+    word = dictionary[Math.floor(Math.random()*dictionary.length)].toUpperCase();
     document.getElementById("answer").innerText = "";
     currentColumn = 0;
     currentRow = 0;
